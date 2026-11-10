@@ -29,7 +29,7 @@ git clone --depth 1 https://github.com/alslrl/final-kit .kit && bash .kit/script
 ## 들어 있는 것
 
 - `AGENTS.md`: 공통 규칙 (설치 시 과제 폴더 AGENTS.md 끝에 덧붙음)
-- `roles/`: 역할 카드 7개. main, interview, research, build, verify, study, docs
+- `roles/`: 역할 카드 8개. main, interview, research, build, verify, study, docs, work(범용 작업)
 - `templates/ops/`: 원장 양식. SESSIONS(명부·전달 방식), STATE, DECISIONS, OPEN, MESSAGES
 - `templates/`: REQUIREMENTS, INTERVIEW, PLAN, VERIFY-SECTION
 - `guides/`: 인터뷰 방법, 과제 지도, 서술형 대비, 범용 흐름(general.md: 서비스 구축형이 아닌 과제)
