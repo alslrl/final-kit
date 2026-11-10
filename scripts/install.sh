@@ -3,7 +3,8 @@
 set -e
 KIT="$(cd "$(dirname "$0")/.." && pwd)"
 { [ -s AGENTS.md ] && printf '\n\n'; cat "$KIT/AGENTS.md"; } >> AGENTS.md
-mkdir -p ops docs/research
+mkdir -p ops docs/research docs/study
+[ -e docs/QUESTIONS.md ] || cp "$KIT/templates/docs/QUESTIONS.md" docs/QUESTIONS.md
 for f in SESSIONS STATE DECISIONS OPEN MESSAGES; do
   [ -e "ops/$f.md" ] || cp "$KIT/templates/ops/$f.md" "ops/$f.md"
 done
@@ -16,5 +17,5 @@ if [ -d .git ]; then
       && echo "note: 이 폴더에만 git 사용자 설정을 넣었습니다." || echo "note: git 사용자 설정을 넣지 못했습니다."
   fi
 fi
-echo "done: AGENTS.md 덧붙임, ops/ · REQUIREMENTS.md · docs/research/ 준비"
+echo "done: AGENTS.md 덧붙임, ops/ · REQUIREMENTS.md · docs/(QUESTIONS, research, study) 준비"
 echo "다음: bash .kit/scripts/envcheck.sh  → 그다음 Codex를 (다시) 실행"

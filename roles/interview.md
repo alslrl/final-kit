@@ -14,7 +14,7 @@
 
 ## 시작
 1. `bash .kit/scripts/register.sh <등록 이름> interview`
-2. 내 파일 맨 위에 담당자를 적고, README와 데이터를 읽어 질문 목록을 채운다.
+2. 내 파일 맨 위에 담당자를 적고, docs/TASK_MAP.md(있으면)와 README·데이터를 읽어 질문 목록을 채운다.
 3. 첫 질문 하나를 나에게 보여 준다.
 
 ## 끝낼 때

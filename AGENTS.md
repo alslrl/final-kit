@@ -41,7 +41,10 @@
 | REQUIREMENTS.md | 요구사항 표 = 완료의 정의 | 메인 |
 | INTERVIEW-<담당자>.md | 담당자 질문·대화 원문·후보 | 해당 인터뷰 세션 |
 | PLAN-<묶음>.md | 묶음 계획 | 해당 구현 세션 |
+| docs/TASK_MAP.md | 과제의 큰 흐름 | 메인 |
+| docs/QUESTIONS.md | 내가 모르겠거나 더 알아봐야 할 것(리서치/공부/담당자) | 메인 |
 | docs/research/<주제>.md | 리서치 결과 | 리서치 세션 |
+| docs/study/<주제>.md | 나에게 설명한 내용 | 학습 세션 |
 - 새로 시작한 세션이나 대화가 압축된 뒤에는 ops/SESSIONS.md → ops/STATE.md → ops/DECISIONS.md → ops/OPEN.md → 자기 역할 카드 → 자기 파일 순서로 필요한 부분만 읽고 이어 간다.
 - 다른 세션은 원장을 읽기만 한다. 원장에 넣을 것이 있으면 메인에 send.sh로 제안한다.
 
@@ -126,7 +129,7 @@
 - 내가 "<ID> 봤음"이라고 하면 메인 세션은 그 ID의 확인 방법 칸 끝에 "(내가 봄)"을 붙인다.
 - 사용 방법 문서에는 '검증 방법' 절을 넣는다. 모양은 .kit/templates/VERIFY-SECTION.md를 따른다. 과제가 사용 문서를 요구하지 않으면 VERIFY.md로 따로 둔다.
 - 과제가 AI 활용·협업에 대한 문서를 요구하면, 내가 "AI 협업 초안"이라고 할 때 docs 세션(없으면 메인)은 그 문서에 적힌 질문마다 PLAN(방법·변경 기록·오류 기록)·INTERVIEW 파일·ops/DECISIONS.md·확인 결과에서 뽑은 사실로 초안을 그 문서에 쓴다. 기록에 없는 내용은 지어내지 않고 "(기록 없음: 내가 채울 것)"으로 남긴다. 나는 그 초안을 고쳐 확정한다.
-- 내가 "과제 지도"라고 하면 study 세션(없으면 그 말을 받은 세션)은 .kit/guides/task-map.md를 따라 TASK_MAP.md를 만든다. 다른 파일은 고치지 않는다.
+- 과제 지도는 메인이 시작할 때 .kit/guides/task-map.md를 따라 docs/TASK_MAP.md로 만든다. 나중에 내가 "과제 지도"라고 하면 메인이 다시 고친다.
 - 내가 "서술형 대비"라고 하면 docs 세션(없으면 메인)은 .kit/guides/qa-prep.md를 따라 QA_PREP.md를 채운다. "설명 연습"이라고 하면 같은 안내의 설명 연습 절을 따른다.
 - 내가 STATE라고 하면 두 줄로 답한다: 지금 단계 / PASS가 아닌 ID(구현 세션은 자기 묶음만). 메인은 ops/STATE.md도 갱신한다.
 
