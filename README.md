@@ -32,7 +32,7 @@ git clone --depth 1 https://github.com/alslrl/final-kit .kit && bash .kit/script
 - `roles/`: 역할 카드 7개. main, interview, research, build, verify, study, docs
 - `templates/ops/`: 원장 양식. SESSIONS(명부·전달 방식), STATE, DECISIONS, OPEN, MESSAGES
 - `templates/`: REQUIREMENTS, INTERVIEW, PLAN, VERIFY-SECTION
-- `guides/`: 인터뷰 방법, 과제 지도, 서술형 대비
+- `guides/`: 인터뷰 방법, 과제 지도, 서술형 대비, 범용 흐름(general.md: 서비스 구축형이 아닌 과제)
 - `scripts/`: install, envcheck, register(명부 등록), send(메시지), ack(전달 테스트 수신), mode(전달 방식 기록)
 - `CHEATSHEET.md`: clone이 막힐 때 직접 칠 최소 규칙
 
