@@ -13,7 +13,7 @@
 ## 2. 폴더와 파일
 ```
 README.md                 과제 안내
-data/equipment.csv        (설비, 321행) 한 행 = 설비 하나
+data/orders.csv           (주문, 1,200행) 한 행 = 주문 한 건   ← 예시
 data/....csv              (한글 이름, 행 수) 한 행 = 무엇
 schema/....json           (결과 형식)
 (이미 있는 코드·폴더가 있으면 한 줄씩)
