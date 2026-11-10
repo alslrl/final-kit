@@ -4,7 +4,8 @@
 ROOT="$(cd "$(dirname "$0")/../.." && pwd)"; KIT="$ROOT/.kit"; S="$ROOT/ops/SESSIONS.md"
 name="$1"; role="$2"; rep="$3"
 case "$role" in main|interview|research|build|verify|study|docs) ;; *) echo "역할은 main interview research build verify study docs 중 하나"; exit 1;; esac
-case "$name" in ""|*" "*|*"|"*) echo "등록 이름에 빈칸이나 | 를 쓰지 마세요"; exit 1;; esac
+case "$name" in ""|*[[:space:]]*|*"|"*|*\\*|*/*) echo "등록 이름에 빈칸, |, \\, / 를 쓰지 마세요"; exit 1;; esac
+case "$role:$name" in interview:interview|interview:interview-?*|build:build-?*) ;; interview:*) echo "인터뷰 등록 이름은 interview 또는 interview-<담당자>"; exit 1;; build:*) echo "구현 등록 이름은 build-<묶음>"; exit 1;; esac
 [ -f "$S" ] || { echo "ops/SESSIONS.md 없음. 먼저 install.sh"; exit 1; }
 id="${CODEX_THREAD_ID:-}"
 [ -n "$id" ] || { echo "CODEX_THREAD_ID가 비어 있음. Codex 세션 안에서 실행하세요."; exit 1; }
