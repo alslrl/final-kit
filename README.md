@@ -12,7 +12,7 @@ git clone --depth 1 https://github.com/alslrl/final-kit .kit && bash .kit/script
 
 ## 진행 순서
 
-1. 첫 터미널에서 `codex` → "너는 main 세션이야. 역할은 main. 시작해."
+1. 첫 터미널에서 `codex` → "너는 main 세션이야. 역할은 main. main.md 시작 순서대로 진행해." (등록 → 환경 확인 → README·데이터 읽고 요구사항 표 → 첫 커밋 → 필요한 세션 제안에서 멈춤)
 2. 메인이 과제를 읽고 필요한 세션 목록(등록 이름, 역할, 첫 문장)을 제안 → 내가 정함
 3. 터미널을 하나씩 열어 `codex` → 메인이 준 첫 문장을 붙여 넣음. 각 세션은 `register.sh`로 자기 ID를 명부에 적음
 4. 메인이 첫 인터뷰 세션으로 전달 테스트 → 전달 방식(queue / queue(승인 필요) / 수동) 결정
