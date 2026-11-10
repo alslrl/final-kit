@@ -18,6 +18,13 @@ git clone --depth 1 https://github.com/alslrl/final-kit .kit && bash .kit/script
 4. 메인이 첫 인터뷰 세션으로 전달 테스트 → 전달 방식(queue / queue(승인 필요) / 수동) 결정
 5. 이후 세션끼리는 `send.sh`로 한 줄 메시지. 수동 모드면 세션이 출력한 [전달할 문장]을 내가 해당 터미널에 붙여 넣음
 
+## 당일 뜰 수 있는 창 (Nomad 0.163 리허설 기준)
+
+- 업데이트 안내 → 2. Skip / 폴더 신뢰 → 1. Trust and continue
+- 기본 샌드박스에서는 `codex queue`와 `.git` 쓰기가 막혀 승인 창이 뜹니다. 아래 세 가지는 처음 뜰 때 `p`(다시 묻지 않기)를 고르면 이후 묻지 않습니다.
+  - `bash .kit/scripts/send.sh` (세션마다 한 번)
+  - `git add`, `git commit`
+
 ## 들어 있는 것
 
 - `AGENTS.md`: 공통 규칙 (설치 시 과제 폴더 AGENTS.md 끝에 덧붙음)
